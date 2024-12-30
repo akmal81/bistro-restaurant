@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-
     const menuStyle = 'font-bold uppercase text-xl text-white hover:text-primary bg-none hover:bg-none'
 
     const menuOption =
@@ -16,13 +15,13 @@ const Navbar = () => {
         </>
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-black/40 fixed z-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
+                            className="h-5 w-5 text-white"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -45,12 +44,14 @@ const Navbar = () => {
                     <p className='uppercase font-cinzel font-bold text-white tracking-[.25em] text-2xl'>restaurant</p>
                 </div>
             </div>
-           
+
             <div className="navbar-end">
-                <ul className="menu menu-horizontal px-1">
-                    {menuOption}
-                </ul>
-                <a className={menuStyle}>sign out</a>
+                <div className=" hidden lg:flex">
+                    <ul className="menu menu-horizontal px-1">
+                      {menuOption}
+                    </ul>
+                </div>
+                <a className="btn">Button</a>
             </div>
         </div>
     );
