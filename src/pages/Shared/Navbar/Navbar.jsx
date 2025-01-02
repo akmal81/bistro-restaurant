@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import cartIcon from '../../../assets/icon/carticon.png'
 
 const Navbar = () => {
     const menuStyle = 'font-bold uppercase text-xl text-white hover:text-primary bg-none hover:bg-none'
@@ -9,9 +10,10 @@ const Navbar = () => {
             <li><Link to='/' className={menuStyle}>home</Link></li>
             <li><Link to='' className={menuStyle}>Contactus</Link></li>
             <li><Link to='' className={menuStyle}>dashboard</Link></li>
-            <li><Link to='' className={menuStyle}>our menu</Link></li>
+            <li><Link to='/ourMenu' className={menuStyle}>our menu</Link></li>
             <li><Link to='' className={menuStyle}>our shop</Link></li>
             <li><Link to='' className={menuStyle}>cart</Link></li>
+            <li><Link to='' className={menuStyle}>Signout</Link></li>
         </>
 
     return (
@@ -48,10 +50,10 @@ const Navbar = () => {
             <div className="navbar-end">
                 <div className=" hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                      {menuOption}
+                        {menuOption}
                     </ul>
                 </div>
-                <a className="btn">Button</a>
+
             </div>
         </div>
     );

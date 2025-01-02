@@ -9,10 +9,16 @@ export default {
       colors:{
         primary:'#D99904',
         black:'#151515',
+
+        dark6:'#E8E8E8',
+        dark7:'#F3F3F3'
         
       },
-      backgroundImage:{
-
+      backgroundImage: {
+        'intro': "url('/src/assets/home/chef-service.jpg')",
+        'featured': "url('/src/assets/home/featured.jpg')",
+        'ourMenuBanner': "url('/src/assets/menu/banner3.jpg')",
+        
       },
       fontFamily: {
         'cinzel': 'Cinzel' ,
