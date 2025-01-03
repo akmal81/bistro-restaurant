@@ -18,6 +18,7 @@ export default {
         'intro': "url('/src/assets/home/chef-service.jpg')",
         'featured': "url('/src/assets/home/featured.jpg')",
         'ourMenuBanner': "url('/src/assets/menu/banner3.jpg')",
+        'ourShopBanner': "url('/src/assets/shop/banner2.jpg')",
         
       },
       fontFamily: {

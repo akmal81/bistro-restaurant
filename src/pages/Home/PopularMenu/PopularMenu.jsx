@@ -7,28 +7,28 @@ const PopularMenu = () => {
 
     const [menu, setMenu] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('/menu.json')
-        .then(res=>res.json())
-        .then(data=>{
+            .then(res => res.json())
+            .then(data => {
 
-            const popularItems = data.filter(item => item.category ==='popular');
-            setMenu(popularItems)
+                const popularItems = data.filter(item => item.category === 'popular');
+                setMenu(popularItems)
 
-        })
-    },[])
+            })
+    }, [])
 
     return (
         <section>
-             <SectionTitle title='popular menu' subTitle='Check it out' />
-             <div className='grid md:grid-cols-2 gap-8 '>
+            <SectionTitle title='popular menu' subTitle='Check it out' />
+            <div className='grid md:grid-cols-2 gap-8 '>
                 {
-                    menu.map(item=><MenuItem key={item._id} item={item}>{item.category}</MenuItem>)
+                    menu.map(item => <MenuItem key={item._id} item={item}/>)
                 }
-             </div>
+            </div>
 
-             
-            <PrimaryBtn btnLabel='view full menu'/>
+
+            <PrimaryBtn btnLabel='view full menu' />
         </section >
     );
 };

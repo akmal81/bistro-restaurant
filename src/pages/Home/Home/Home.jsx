@@ -8,10 +8,14 @@ import PhoneNumber from '../PhoneNumber/PhoneNumber';
 import ChefRecommends from '../ChefRecommends/ChefRecommends';
 import Featured from '../Featured/Featured';
 import Testimonials from '../Testimonials/Testimonials';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
     return (
         <>
+            <Helmet>
+                <title>Home || Bistro Boss</title>
+            </Helmet>
             <Banner />
             <main >
                 <section className='lg:w-8/12 mx-auto'>
@@ -22,8 +26,8 @@ const Home = () => {
                     <ChefRecommends />
                 </section>
                 <Featured />
-                <section  className='lg:w-8/12 mx-auto'>
-                    <Testimonials/>
+                <section className='lg:w-8/12 mx-auto'>
+                    <Testimonials />
                 </section>
             </main>
         </>
