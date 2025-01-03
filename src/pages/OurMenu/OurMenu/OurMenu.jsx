@@ -8,15 +8,14 @@ import MenuCagetory from '../MenuCagetory/MenuCagetory';
 const OurMenu = () => {
 
     const [menu] = useMenu();
-    console.log(menu)
-
+  
     const dessert = menu.filter(item => item.category === 'dessert');
     const soup = menu.filter(item => item.category === 'soup');
     const salad = menu.filter(item => item.category === 'salad');
     const pizza = menu.filter(item => item.category === 'pizza');
     const offered = menu.filter(item => item.category === 'offered');
 
-    console.log()
+  
 
     return (
         <>

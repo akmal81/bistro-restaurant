@@ -1,0 +1,11 @@
+.react-tabs__tab{
+    font-weight: bold;
+  }
+  .react-tabs__tab--selected{
+    border: 2px solid #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 4px;
+    font-weight: bold;
+    color: #D99904;
+  }
