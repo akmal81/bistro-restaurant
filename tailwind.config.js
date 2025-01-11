@@ -19,8 +19,18 @@ export default {
         'featured': "url('/src/assets/home/featured.jpg')",
         'ourMenuBanner': "url('/src/assets/menu/banner3.jpg')",
         'ourShopBanner': "url('/src/assets/shop/banner2.jpg')",
+        'authBg': "url('/src/assets/auth/authBg.png')",
         
       },
+
+      dropShadow:{
+        'authShadow': [
+          '10px 10px 10px  rgba(0, 0, 0, 0.25)',
+          '-2px -2px 10px rgba(0, 0, 0, 0.5)'
+
+        ] 
+      },
+
       fontFamily: {
         'cinzel': 'Cinzel' ,
         'inter':'Inter'

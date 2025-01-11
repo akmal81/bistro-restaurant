@@ -8,16 +8,16 @@ const Navbar = () => {
     const menuOption =
         <>
             <li><Link to='/' className={menuStyle}>home</Link></li>
-            <li><Link to='' className={menuStyle}>Contactus</Link></li>
+            <li><Link to='/contact' className={menuStyle}>Contactus</Link></li>
             <li><Link to='' className={menuStyle}>dashboard</Link></li>
             <li><Link to='/ourMenu' className={menuStyle}>our menu</Link></li>
             <li><Link to='/ourShop' className={menuStyle}>our shop</Link></li>
             <li><Link to='' className={menuStyle}>cart</Link></li>
-            <li><Link to='' className={menuStyle}>Signout</Link></li>
+            <li><Link to='/login' className={menuStyle}>Login</Link></li>
         </>
 
     return (
-        <div className="navbar bg-black/40 fixed z-10">
+        <div className="navbar bg-black/40 fixed z-10 backdrop-blur-3xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

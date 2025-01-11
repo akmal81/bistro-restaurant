@@ -24,11 +24,11 @@ const OurMenu = () => {
             </Helmet>
             <Cover title='our menu' subTitle={'Would you like to try a dish?'} bgImage='bg-ourMenuBanner' body={false} />
             <SectionTitle title="today's offer" subTitle="Don't miss it" />
-            <MenuCagetory items={offered} />
-            <MenuCagetory items={dessert.slice(0, 6)} banner={true}  bgImage='bg-intro'/>
-            <MenuCagetory items={soup.slice(0, 6)} banner={true}  bgImage='bg-intro'/>
-            <MenuCagetory items={salad.slice(0, 6)} banner={true}  bgImage='bg-intro'/>
-            <MenuCagetory items={pizza.slice(0, 6)} banner={true}  bgImage='bg-intro'/>
+            <MenuCagetory items={offered} title='offered' />
+            <MenuCagetory items={dessert.slice(0, 6)} banner={true} title='dessert'  bgImage='bg-intro'/>
+            <MenuCagetory items={soup.slice(0, 6)} banner={true} title='soup' bgImage='bg-intro'/>
+            <MenuCagetory items={salad.slice(0, 6)} banner={true} title='salad' bgImage='bg-intro'/>
+            <MenuCagetory items={pizza.slice(0, 6)} banner={true} title='pizza' bgImage='bg-intro'/>
         </>
     );
 };

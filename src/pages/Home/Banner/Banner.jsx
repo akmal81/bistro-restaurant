@@ -13,28 +13,28 @@ const Banner = () => {
     return (
         <Carousel
         autoPlay={true}>
-            <div>
-                <img src={slide1} />
+            <div className=''>
+                <img className='object-bottom' src={slide1} />
 
             </div>
-            <div>
-                <img src={slide2} />
+            <div className=''>
+                <img className='object-bottom' src={slide2} />
 
             </div>
-            <div>
-                <img src={slide3} />
+            <div className=''>
+                <img className='object-bottom' src={slide3} />
 
             </div>
-            <div>
-                <img src={slide4} />
+            <div className=''>
+                <img className='object-bottom' src={slide4} />
 
             </div>
-            <div>
-                <img src={slide5} />
+            <div className=''>
+                <img className='object-bottom' src={slide5} />
 
             </div>
-            <div>
-                <img src={slide6} />
+            <div className=''>
+                <img className='object-bottom' src={slide6} />
 
             </div>
         </Carousel>
