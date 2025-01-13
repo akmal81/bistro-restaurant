@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import cartIcon from '../../../assets/icon/carticon.png'
+import useAuth from '../../../hooks/useAuth';
 
 const Navbar = () => {
+
+    const {user} = useAuth();
+    console.log(user);
     const menuStyle = 'font-bold uppercase text-xl text-white hover:text-primary bg-none hover:bg-none'
 
     const menuOption =
@@ -13,7 +17,13 @@ const Navbar = () => {
             <li><Link to='/ourMenu' className={menuStyle}>our menu</Link></li>
             <li><Link to='/ourShop' className={menuStyle}>our shop</Link></li>
             <li><Link to='' className={menuStyle}>cart</Link></li>
-            <li><Link to='/login' className={menuStyle}>Login</Link></li>
+                {
+                    user ? 
+                    <><li><Link to='/login' className={menuStyle}>Log out</Link></li></> 
+                    : 
+                    <><li><Link to='/login' className={menuStyle}>Login</Link></li></>
+                }
+            
         </>
 
     return (

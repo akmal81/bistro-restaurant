@@ -1,16 +1,25 @@
 import React from 'react';
 import authImage from '../../assets/auth/authImage.png'
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
 
-
+    const {login}= useAuth();
     const handleLogin = (e) => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password)
+        console.log(email, password);
+        login(email, password)
+        .then((userCredential)=>{
+            const user = userCredential.user;
+            console.log(user);
+        })
+        .catch((error)=>{
+            console.log(error);
+        })
     }
     return (
         <div className='bg-authBg bg-no-repeat  bg-center bg-cover min-h-screen flex items-center justify-center'>
